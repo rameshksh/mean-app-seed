@@ -1,0 +1,31 @@
+{
+  "name": "mean-app",
+  "version": "1.0.0",
+  "description": "Mean App using Angular 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/start.js",
+    "server": "tsc --sourcemap --outDir ./dist/ --rootDir ./ --module commonjs ./server/boot.ts --experimentalDecorators && node ./dist/server/boot.js "
+  },
+  "devDependencies": {
+    "@types/node": "^10.3.4",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "fs-extra": "^6.0.1",
+    "http": "0.0.0",
+    "mongodb": "^3.0.10",
+    "path": "^0.12.7",
+    "require": "^2.4.20",
+    "requirejs": "^2.3.5",
+    "swig": "^1.4.2",
+    "winston": "^3.0.0"
+  },
+  "dependencies": {
+    "@types/cookie-parser": "^1.4.1",
+    "@types/express": "^4.16.0",
+    "@types/mongodb": "^3.0.21",
+    "@types/swig": "0.0.29",
+    "tsc": "^1.20150623.0"
+  }
+}
